@@ -14,6 +14,11 @@ section {
 }
 
 .container {
+  width: 900px;
+  margin: auto;
+}
+
+.small_container {
   width: 830px;
   margin: auto;
 }
@@ -107,4 +112,5 @@ header .title a:hover {
 }
 #quality .description {
   font-size: 18px;
+  line-height: 35px;
 }
