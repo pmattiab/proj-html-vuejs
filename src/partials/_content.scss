@@ -1,1 +1,11 @@
 // MAIN
+
+#quality {
+
+    background-color: $brand_primary_color;
+
+    .description {
+        font-size: $description_size;
+        line-height: 35px;
+    }
+}

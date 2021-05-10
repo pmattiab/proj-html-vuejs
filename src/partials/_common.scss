@@ -10,10 +10,40 @@ body {
     color: $main_text_color;
 }
 
+section {
+    padding: $section_padding;
+}
+
+.container {
+    width: $container_size;
+    margin: auto;
+}
+
+.small_container {
+    width: $small_container_size;
+    margin: auto;
+}
+
+.txt_cntr {
+    text-align: center;
+}
+
+.divider {
+    margin: $divider_margin;
+}
+
 li {
     list-style-type: none;
 }
 
 a {
     text-decoration: none;
+}
+
+h1 {
+    font-size: $h1_size;
+}
+
+h2 {
+    font-size: $h2_size;
 }
