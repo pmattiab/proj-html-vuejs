@@ -1,1 +1,65 @@
 // HEADER
+header {
+    width: 100%;
+    height: 1080px;
+    padding: 50px 100px;
+    background-image: $header_image;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.nav_bar {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    li {
+        display: inline-block;
+        margin-left: 35px;
+    }
+
+    a {
+        color: $main_text_color;
+        text-transform: uppercase;
+        font-weight: 500;
+
+        &:hover {
+            color: $brand_secondary_color;
+        }
+
+        &.active {
+            color: $brand_details_color;
+        }
+    }
+}
+
+.title {
+
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    h1 {
+        text-transform: uppercase;
+        font-size: 80px;
+    }
+
+    span {
+        display: block;
+        margin: 30px 0;
+    }
+
+    a {
+        color: $main_text_color;
+        text-transform: uppercase;
+        display: inline-block;
+        padding: 15px 35px;
+        border: 1px solid $main_text_color;
+    }
+
+}

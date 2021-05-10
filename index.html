@@ -7,6 +7,9 @@
     <title>Avada Gym</title>
 
     <!-- CSS -->
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet"> 
     <!-- font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
     <!-- file css -->
@@ -18,9 +21,40 @@
 </head>
 <body>
     
+    <div id="root">
+
+        <!-- INIZIO HEADER -->
+        <header>
+
+            <div class="nav_bar">
+
+                <div class="logo">
+                    <img src="img/gym_logo_1x.png" alt="logo">
+                </div>
+
+                <div class="nav_links">
+                    <nav>
+                        <ul class="links_list">
+                            <li v-for="(link, index) in headerLinks"><a :class="{active : index == activeHeaderLink}" href="#">{{link}}</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+            </div>
+
+            <div class="title">
+                <h1>no pain no gain</h1>
+                <span>Motivation is what gets you started. Habit is what keeps you going</span>
+                <a href="#">join us today</a>
+            </div>
+
+        </header>
+        <!-- FINE HEADER -->
+
+    </div>
 
     <!-- JS -->
-    <script type="text/javascript" src="js/script.js"></script>  
+    <script type="text/javascript" src="dist/app.js"></script>  
 
 </body>
 </html>
