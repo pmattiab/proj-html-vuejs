@@ -15,22 +15,14 @@ header {
         width: 100%;
         @include centered;
     
-        h1 {
-            text-transform: uppercase;
-        }
-    
         .subtitle {
             margin: 20px 0 40px 0;
             font-size: $sub_title_size;
         }
     
-        a {
-            font-size: $sub_title_size;
+        .button {
             color: $main_text_color;
-            text-transform: uppercase;
-            display: inline-block;
-            padding: 15px 35px;
-            border: 1px solid $main_text_color;
+            border-color: $main_text_color;
 
             &:hover {
                 color: $brand_secondary_color;

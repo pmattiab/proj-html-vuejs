@@ -37,8 +37,13 @@
         &.button {
             color: $main_text_color;
             background-color: $brand_details_color;
-            border: 1px solid $brand_details_color;
-            padding: 15px 0;
+            border-color: $brand_details_color;
+
+            &:hover {
+                color: $brand_details_color;
+                background-color: $brand_third_color;
+                border-color: $brand_details_color;
+            }
         }
     }
 }
@@ -102,16 +107,75 @@
 }
 
 #performance {
-
     background-color: $brand_primary_color;
+}
+
+#motivation {
+
+    background-image: url(../img/home-testimonial-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    .motivation_text {
+        margin: 30px 0;
+        letter-spacing: 2px;
+        line-height: $title_line_height;
+
+        .cit {
+            font-size: 30px;
+        }
+    }
+}
+
+#trainers {
+
+    background-color: $brand_third_color;
+
+    .row {
+        margin-bottom: 50px;
+    }
 
     .col {
-        
-        img {
-            width: 100%;
+        background-color: $brand_primary_color;
+    }
+
+    .trainer_descr {
+
+        padding: 30px;
+        line-height: 25px;
+
+        .trainer_txt {
+            line-height: $parag_line_height;
+            color: $secondary_text_color;
+            margin: 25px 0;
+            font-size: $paragraph_size;
         }
     }
 
+    .social {
 
+        span {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            background-color: $brand_third_color;
+            margin-right: 10px;
+            position: relative;
 
+            i {
+                @include centered;
+            }
+        }
+    }
+
+    .button {
+        color: $main_text_color;
+        border-color: $main_text_color;
+
+        &:hover {
+            color: $brand_details_color;
+            border-color: $brand_details_color;
+        }
+    }
 }

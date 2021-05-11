@@ -39,6 +39,10 @@
     .col {
         width: calc((100% / 3) - 40px);
         float: left;
+
+        img {
+            width: 100%;
+        }
     }
 
     .col_sx {
