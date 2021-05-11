@@ -83,6 +83,25 @@ h4 {
   clear: both;
 }
 
+.three_col .col {
+  width: calc((100% / 3) - 40px);
+  float: left;
+}
+.three_col .col_sx {
+  margin: 20px 20px 20px 0;
+}
+.three_col .col_cx {
+  margin: 20px 20px 20px 20px;
+}
+.three_col .col_dx {
+  margin: 20px 0 20px 20px;
+}
+.three_col::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 .four_col .col {
   width: calc(25% - 20px);
   float: left;
@@ -115,8 +134,7 @@ header .title {
 header .title h1 {
   text-transform: uppercase;
 }
-header .title span {
-  display: block;
+header .title .subtitle {
   margin: 20px 0 40px 0;
   font-size: 20px;
 }
@@ -235,4 +253,11 @@ header .title a:hover {
   color: #aeafae;
   font-size: 14px;
   line-height: 30px;
+}
+
+#performance {
+  background-color: #252a2d;
+}
+#performance .col img {
+  width: 100%;
 }

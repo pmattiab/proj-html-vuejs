@@ -19,8 +19,7 @@ header {
             text-transform: uppercase;
         }
     
-        span {
-            display: block;
+        .subtitle {
             margin: 20px 0 40px 0;
             font-size: $sub_title_size;
         }

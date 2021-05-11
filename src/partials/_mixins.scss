@@ -17,3 +17,48 @@
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+@mixin two_columns {
+
+    .col {
+        width: calc(50% - 25px);
+        float: left;
+    }
+
+    .col_sx {
+        margin-right: 25px;
+    }
+
+    .col_dx {
+        margin-left: 25px;
+    }
+}
+
+@mixin three_columns {
+
+    .col {
+        width: calc((100% / 3) - 40px);
+        float: left;
+    }
+
+    .col_sx {
+        margin: 20px 20px 20px 0;
+    }
+
+    .col_cx {
+        margin: 20px 20px 20px 20px;
+    }
+
+    .col_dx {
+        margin: 20px 0 20px 20px;
+    }
+}
+
+@mixin four_columns {
+
+    .col {
+        width: calc(25% - 20px);
+        float: left;
+        margin: 0 10px;
+    }
+}

@@ -70,18 +70,16 @@ h4 {
 
 .two_col {
 
-    .col {
-        width: calc(50% - 25px);
-        float: left;
-    }
+    @include two_columns;
 
-    .col_sx {
-        margin-right: 25px;
+    &::after {
+        @include clearfix;
     }
+}
 
-    .col_dx {
-        margin-left: 25px;
-    }
+.three_col {
+
+    @include three_columns;
 
     &::after {
         @include clearfix;
@@ -90,11 +88,7 @@ h4 {
 
 .four_col {
 
-    .col {
-        width: calc(25% - 20px);
-        float: left;
-        margin: 0 10px;
-    }
+    @include four_columns;
 
     &::after {
         @include clearfix;
