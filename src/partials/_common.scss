@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Montserrat', sans-serif;
     color: $main_text_color;
@@ -28,8 +32,16 @@ section {
     text-align: center;
 }
 
-.divider {
-    margin: $divider_margin;
+.divider_x {
+    margin: $divider_x_margin;
+}
+
+.divider_xx {
+    margin: $divider_xx_margin;
+}
+
+input {
+    outline: none;
 }
 
 li {
@@ -46,4 +58,45 @@ h1 {
 
 h2 {
     font-size: $h2_size;
+}
+
+h3 {
+    font-size: $h3_size;
+}
+
+h4 {
+    font-size: $h4_size;
+}
+
+.two_col {
+
+    .col {
+        width: calc(50% - 25px);
+        float: left;
+    }
+
+    .col_sx {
+        margin-right: 25px;
+    }
+
+    .col_dx {
+        margin-left: 25px;
+    }
+
+    &::after {
+        @include clearfix;
+    }
+}
+
+.four_col {
+
+    .col {
+        width: calc(25% - 20px);
+        float: left;
+        margin: 0 10px;
+    }
+
+    &::after {
+        @include clearfix;
+    }
 }

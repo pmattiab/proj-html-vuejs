@@ -2,8 +2,10 @@
 // color palette
 $brand_primary_color: #252a2d;
 $brand_secondary_color: #6b6b6b;
+$brand_third_color: #212425;
 $brand_details_color: #d5625f;
 $main_text_color: #fefefe;
+$secondary_text_color: #aeafae;
 
 // links
 $header_image: url("../img/home-banner.jpg");
@@ -11,13 +13,21 @@ $header_image: url("../img/home-banner.jpg");
 // font-size
 $h1_size: 90px;
 $h2_size: 40px;
+$h3_size: 25px;
+$h4_size: 18px;
 $sub_title_size: 20px;
 $description_size: 18px;
+$paragraph_size: 14px;
+
+// font line height
+$parag_line_height: 30px;
+$subtitle_line_height: 40px;
 
 // container size
-$container_size: 900px;
+$container_size: 1150px;
 $small_container_size: 830px;
 
 // margin - padding
 $section_padding: 120px 0;
-$divider_margin: 30px 0;
+$divider_x_margin: 15px 0;
+$divider_xx_margin: 30px 0;

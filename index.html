@@ -21,6 +21,7 @@
 </head>
 <body>
     
+    <!-- inizio elemento root vue js -->
     <div id="root">
 
         <!-- INIZIO HEADER -->
@@ -38,7 +39,15 @@
                 <div class="nav_links">
                     <nav>
                         <ul class="links_list">
-                            <li v-for="(link, index) in headerLinks"><a :class="{active : index == activeHeaderLink}" href="#">{{link}}</a></li>
+                            <li
+                                v-for="(link, index) in headerLinks">
+                                <a
+                                    :class="{active : index == activeHeaderLink}"
+                                    @click="changeActivePage(index)"
+                                    href="#">
+                                    {{link}}
+                                </a>
+                            </li>
                         </ul>
                     </nav>
                 </div>
@@ -50,7 +59,7 @@
             <div class="title txt_cntr">
                 <h1>no pain no gain</h1>
                 <span>Motivation is what gets you started. Habit is what keeps you going</span>
-                <a href="#">join us today</a>
+                <a href="#sign_up">join us today</a>
             </div>
 
         </header>
@@ -59,28 +68,261 @@
         <!-- INIZIO MAIN -->
         <main>
 
+            <!-- inizio sezione qualità -->
             <section id="quality">
 
+                <!-- inizio contenitore stretto qualità -->
                 <div class="small_container txt_cntr">
+
+                    <!-- titolo -->
                     <div class="title">
                         <h2>WORLD CLASS Fitness</h2>
                     </div>
     
-                    <div class="divider">
+                    <!-- divisore -->
+                    <div class="divider_xx">
                         <img src="img/divider-xx-red.png" alt="divider">
                     </div>
     
+                    <!-- descrizione -->
                     <div class="description">
                         <span>At Avada Gym we do from top to bottom is of the highest quality to ensure we're equipped to help you reach your golas of a healthy and fit lifestyle.</span>
                     </div>
+
                 </div>
+                <!-- fine contenitore qualità -->
 
             </section>
+            <!-- fine sezione qualità -->
+
+            <!-- inizio sezione registrati -->
+            <section id="sign_up">
+
+                <!-- inizio contenitore registrati -->
+                <div class="container two_col">
+
+                    <!-- colonna sinistra -->
+                    <div class="col col_sx">
+                        <img src="img/home_img-compressor.jpg" alt="compressor">
+                    </div>
+
+                    <!-- colonna destra -->
+                    <div class="col col_dx">
+                        <h3>Sign Up For a Free Training Session!</h3>
+                        <label for="name">Name ..*</label>
+                        <input type="text" id="name">
+                        <label for="">Email</label>
+                        <input type="email" id="email">
+                        <input class="button" type="submit" value="START NOW!">
+                    </div>
+
+                </div>
+                <!-- fine contenitore registrati -->
+
+            </section>
+            <!-- fine sezione registrati -->
+
+            <!-- inizio sezione servizi -->
+            <section id="services">
+
+                <!-- inizio contenitore servizi -->
+                <div class="container four_col txt_cntr">
+
+                    <!-- inizio colonna 1 -->
+                    <div class="col">
+                        <div class="icon txt_cntr">
+                            <i class="fas fa-unlink"></i>
+                        </div>
+                        <div>
+                            <h4>Strength & Conditioning</h4>
+                        </div>
+                        <div class="divider_x">
+                            <img src="img/divider-x-red.png" alt="">
+                        </div>
+                        <div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In augue nisl, ornare es volutpat etra us.</p>
+                        </div>
+                    </div>
+                    <!-- fine colonna 1 -->
+
+                    <!-- inizio colonna 2 -->
+                    <div class="col">
+                        <div class="icon">
+                            <i class="fas fa-bicycle"></i>
+                        </div>
+                        <div>
+                            <h4>Fitness & Cardio</h4>
+                        </div>
+                        <div class="divider_x">
+                            <img src="img/divider-x-red.png" alt="">
+                        </div>
+                        <div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In augue nisl, ornare es volutpat etra us.</p>
+                        </div>
+                    </div>
+                    <!-- fine colonna 2 -->
+
+                    <!-- inizio colonna 3 -->
+                    <div class="col">
+                        <div class="icon">
+                            <i class="fab fa-skyatlas"></i>
+                        </div>
+                        <div>
+                            <h4>Flexibility & Rest</h4>
+                        </div>
+                        <div class="divider_x">
+                            <img src="img/divider-x-red.png" alt="">
+                        </div>
+                        <div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In augue nisl, ornare es volutpat etra us.</p>
+                        </div>
+                    </div>
+                    <!-- fine colonna 3 -->
+
+                    <!-- inizio colonna 4 -->
+                    <div class="col">
+                        <div class="icon">
+                            <i class="fas fa-heartbeat"></i>
+                        </div>
+                        <div>
+                            <h4>Health & Diet</h4>
+                        </div>
+                        <div class="divider_x">
+                            <img src="img/divider-x-red.png" alt="">
+                        </div>
+                        <div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In augue nisl, ornare es volutpat etra us.</p>
+                        </div>
+                    </div>
+                    <!-- fine colonna 4 -->
+
+                </div>
+                <!-- fine contenitore servizi -->
+
+            </section>
+            <!-- fine sezione servizi -->
+
+            <!-- inizio sezione revisioni -->
+            <section id="reviews">
+
+                <!-- inizio contenitore revisioni -->
+                <div class="container">
+
+                    <!-- inizio riga titolo -->
+                    <div class="title_row txt_cntr">
+
+                        <!-- titolo -->
+                        <div class="title">
+                            <h2>REAL WORLD RESULTS</h2>
+                        </div>
+    
+                        <!-- divisore -->
+                        <div class="divider_xx">
+                            <img src="img/divider-xx-red.png" alt="divider">
+                        </div>
+
+                    </div>
+                    <!-- fine riga titolo -->
+
+                    <!-- inizio riga superiore revisioni -->
+                    <div class="top_row two_col">
+
+                        <!-- inizio colonna sinistra riga superiore -->
+                        <div class="col col_sx">
+
+                            <div class="single_review">
+
+                                <div class="review_img">
+                                    <img src="img/review_1-compressor.jpg" alt="">
+                                </div>
+
+                                <div class="review_txt">
+                                    <p><em>“The trainers at Avada Gym have helped me reach my fitness goals beyond anything I could of hoped for. I love it!”</em></p>
+                                    <span><b>– Tara Smith</b></span>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <!-- fine colonna sinistra riga superiore -->
+
+                        <!-- inizio colonna destra riga superiore -->
+                        <div class="col col_dx">
+
+                            <div class="single_review">
+
+                                <div class="review_img">
+                                    <img src="img/review_3-compressor-2.jpg" alt="">
+                                </div>
+
+                                <div class="review_txt">
+                                    <p><em>“The atmosphere at Avada Gym is amazing, the people are even better. All in all, it is a great place to work out.”</em></p>
+                                    <span><b>– Simon Chel</b></span>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <!-- fine colonna destra riga superiore -->
+
+                    </div>
+                    <!-- fine riga superiore revisioni -->
+
+                    <!-- inizio riga inferiore revisioni -->
+                    <div class="bottom_row two_col">
+
+                        <!-- inizio colonna sinistra riga inferiore -->
+                        <div class="col col_sx">
+
+                            <div class="single_review">
+
+                                <div class="review_img">
+                                    <img src="img/review_2-compressor.jpg" alt="">
+                                </div>
+
+                                <div class="review_txt">
+                                    <p><em>“The facilities at Avada Gym stood out to me the most. They are well maintained and have high quality equipment.”</em></p>
+                                    <span><b>– Jen Wirth</b></span>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <!-- fine colonna sinistra riga inferiore -->
+
+                        <!-- inizio colonna destra riga inferiore -->
+                        <div class="col col_dx">
+
+                            <div class="single_review">
+
+                                <div class="review_img">
+                                    <img src="img/review_4-compressor-2.jpg" alt="">
+                                </div>
+
+                                <div class="review_txt">
+                                    <p><em>“No bad things to say about Avada Gym, they are top notch at every corner and truly take care of their customers.”</em></p>
+                                    <span><b>– Jeff Glum</b></span>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <!-- fine colonna destra riga inferiore -->
+
+                    </div>
+                    <!-- fine riga inferiore revisioni -->
+
+                </div>
+                <!-- fine contenitore revisioni -->
+
+            </section>
+            <!-- fine sezione revisioni -->
 
         </main>
         <!-- FINE MAIN -->
 
     </div>
+    <!-- fine elemento root vue js -->
 
     <!-- JS -->
     <script type="text/javascript" src="dist/app.js"></script>  

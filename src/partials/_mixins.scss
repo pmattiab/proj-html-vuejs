@@ -1,1 +1,19 @@
 // MIXINS
+@mixin display-flex {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+
+@mixin clearfix {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@mixin centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

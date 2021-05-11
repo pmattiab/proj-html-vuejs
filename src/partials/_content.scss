@@ -1,11 +1,102 @@
 // MAIN
-
 #quality {
 
     background-color: $brand_primary_color;
 
     .description {
+        color: $secondary_text_color;
         font-size: $description_size;
-        line-height: 35px;
+        line-height: $subtitle_line_height;
     }
+}
+
+#sign_up {
+
+    background-color: $brand_third_color;
+
+    h3 {
+        margin-bottom: 40px;
+    }
+
+    label {
+
+        color: $secondary_text_color;
+    }
+
+    input {
+        
+        width: 100%;
+        height: 50px;
+        margin: 10px 0 30px;
+        padding: 0 10px;
+        font-size: $description_size;
+        color: $secondary_text_color;
+        background-color: $brand_primary_color;
+        border: 1px solid $brand_secondary_color;
+
+        &.button {
+            color: $main_text_color;
+            background-color: $brand_details_color;
+            border: 1px solid $brand_details_color;
+            padding: 15px 0;
+        }
+    }
+}
+
+#services {
+
+    background-image: url(../img/gym_bkgd_bw-compressor.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    .col {
+
+        .icon {
+            width: 100px;
+            height: 100px;
+            border: 2px solid $brand_details_color;
+            border-radius: 50%;
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        i {
+            font-size: 50px;
+            color: $brand_details_color;
+            @include centered;
+        }
+
+        h4 {
+            margin: 15px 0;
+        }
+
+        p {
+            color: $secondary_text_color;
+            font-size: $paragraph_size;
+            line-height: $parag_line_height;
+        }
+    }
+
+}
+
+#reviews {
+
+    background-color: $brand_primary_color;
+
+    .single_review {
+        background-color: $brand_third_color;
+        padding: 20px;
+        margin-bottom: 40px;
+        @include display-flex;
+
+        .review_txt {
+            padding: 0 25px;
+            color: $secondary_text_color;
+            font-size: $paragraph_size;
+            line-height: $parag_line_height;
+        }
+    }
+
 }
