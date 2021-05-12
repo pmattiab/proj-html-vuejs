@@ -28,7 +28,7 @@ section {
     margin: auto;
 }
 
-.txt_cntr {
+.txt_center {
     text-align: center;
 }
 
@@ -53,16 +53,17 @@ a {
 }
 
 .button {
-    text-transform: uppercase;
-    font-size: $sub_title_size;
-    padding: 15px 35px;
-    display: inline-block;
-    border: 1px solid;
-    cursor: pointer;
+    
+    @include button;
 
     &:active {
         transform: translateY(2px);
     }
+}
+
+.white_btn {
+    color: $main_text_color;
+    border-color: $main_text_color;
 }
 
 h1 {

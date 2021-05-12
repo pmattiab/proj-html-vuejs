@@ -170,12 +170,68 @@
     }
 
     .button {
-        color: $main_text_color;
-        border-color: $main_text_color;
 
         &:hover {
             color: $brand_details_color;
             border-color: $brand_details_color;
+        }
+    }
+}
+
+#news {
+
+    background-color: $brand_primary_color;
+
+    .single_new {
+        background-color: $brand_third_color;
+        margin-bottom: 40px;
+
+        .news_article {
+            
+            padding: 25px 20px;
+            line-height: $parag_line_height;
+
+            h3 {
+                margin-bottom: 10px;
+            }
+
+            p {
+                font-size: $paragraph_size;
+                color: $secondary_text_color;
+            }
+        }
+    }
+
+    .button {
+
+        &:hover {
+            color: $brand_details_color;
+            border-color: $brand_details_color;
+        }
+    }
+
+}
+
+#goals {
+    background-image: url(../img/home-parallax.jpg);
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: -150px;
+    background-repeat: no-repeat;
+    padding: 60px 0;
+
+    .container {
+
+        @include display-flex;
+
+        .title {
+
+            flex-grow: 1;
+
+            h2 {
+                text-transform: capitalize;
+                margin-bottom: 15px;
+            }
         }
     }
 }

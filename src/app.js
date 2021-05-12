@@ -10,5 +10,4 @@ var app = new Vue ({
             this.activeHeaderLink = index;
         }
     }
-
 });
