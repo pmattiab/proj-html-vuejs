@@ -1,4 +1,5 @@
 // VARIABLES
+
 // color palette
 $brand_primary_color: #252a2d;
 $brand_secondary_color: #6b6b6b;
@@ -6,9 +7,13 @@ $brand_third_color: #212425;
 $brand_details_color: #d5625f;
 $main_text_color: #fefefe;
 $secondary_text_color: #aeafae;
+$footer_title_color: #7e8995;
 
-// links
+// background images
 $header_image: url("../img/home-banner.jpg");
+$services_image: url("../img/gym_bkgd_bw-compressor.jpg");
+$motivation_image: url("../img/home-testimonial-bg.jpg");
+$goals_image: url("../img/home-parallax.jpg");
 
 // font-size
 $h1_size: 90px;
@@ -16,6 +21,7 @@ $h2_size: 35px;
 $h3_size: 23px;
 $h4_size: 18px;
 $h5_size: 15px;
+$h6_size: 14px;
 $sub_title_size: 20px;
 $description_size: 18px;
 $paragraph_size: 14px;

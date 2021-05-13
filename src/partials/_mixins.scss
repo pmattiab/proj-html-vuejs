@@ -61,9 +61,9 @@
 @mixin four_columns {
 
     .col {
-        width: calc(25% - 20px);
+        width: calc(25% - 25px);
         float: left;
-        margin: 0 10px;
+        margin: 0 12.5px;
     }
 }
 

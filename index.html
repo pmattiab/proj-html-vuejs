@@ -139,7 +139,7 @@
                         <div class="divider_x">
                             <img src="img/divider-x-red.png" alt="">
                         </div>
-                        <div>
+                        <div class="paragraph">
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In augue nisl, ornare es volutpat etra us.</p>
                         </div>
                     </div>
@@ -156,7 +156,7 @@
                         <div class="divider_x">
                             <img src="img/divider-x-red.png" alt="">
                         </div>
-                        <div>
+                        <div class="paragraph">
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In augue nisl, ornare es volutpat etra us.</p>
                         </div>
                     </div>
@@ -173,7 +173,7 @@
                         <div class="divider_x">
                             <img src="img/divider-x-red.png" alt="">
                         </div>
-                        <div>
+                        <div class="paragraph">
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In augue nisl, ornare es volutpat etra us.</p>
                         </div>
                     </div>
@@ -190,7 +190,7 @@
                         <div class="divider_x">
                             <img src="img/divider-x-red.png" alt="">
                         </div>
-                        <div>
+                        <div class="paragraph">
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In augue nisl, ornare es volutpat etra us.</p>
                         </div>
                     </div>
@@ -236,7 +236,7 @@
                                     <img src="img/review_1-compressor.jpg" alt="">
                                 </div>
 
-                                <div class="review_txt">
+                                <div class="review_txt paragraph">
                                     <p><em>“The trainers at Avada Gym have helped me reach my fitness goals beyond anything I could of hoped for. I love it!”</em></p>
                                     <span><b>– Tara Smith</b></span>
                                 </div>
@@ -255,7 +255,7 @@
                                     <img src="img/review_3-compressor-2.jpg" alt="">
                                 </div>
 
-                                <div class="review_txt">
+                                <div class="review_txt paragraph">
                                     <p><em>“The atmosphere at Avada Gym is amazing, the people are even better. All in all, it is a great place to work out.”</em></p>
                                     <span><b>– Simon Chel</b></span>
                                 </div>
@@ -280,7 +280,7 @@
                                     <img src="img/review_2-compressor.jpg" alt="">
                                 </div>
 
-                                <div class="review_txt">
+                                <div class="review_txt paragraph">
                                     <p><em>“The facilities at Avada Gym stood out to me the most. They are well maintained and have high quality equipment.”</em></p>
                                     <span><b>– Jen Wirth</b></span>
                                 </div>
@@ -299,7 +299,7 @@
                                     <img src="img/review_4-compressor-2.jpg" alt="">
                                 </div>
 
-                                <div class="review_txt">
+                                <div class="review_txt paragraph">
                                     <p><em>“No bad things to say about Avada Gym, they are top notch at every corner and truly take care of their customers.”</em></p>
                                     <span><b>– Jeff Glum</b></span>
                                 </div>
@@ -425,13 +425,11 @@
                             <div class="trainer_descr">
                                 <div>
                                     <h5>Ann Baker<br>Personal Trainer</h5>
-                                    <p class="trainer_txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In augue nisl, onare volutpat.</p>
+                                    <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In augue nisl, onare volutpat.</p>
                                 </div>
     
                                 <div class="social">
-                                    <span><i class="fab fa-facebook-f"></i></span>
-                                    <span><i class="fab fa-twitter"></i></span>
-                                    <span><i class="fab fa-instagram"></i></span>
+                                    <a v-for="icon in footerSocial" :href="icon.url"><i class="fab" :class="icon.class"></i></a>
                                 </div>
                             </div>
                             
@@ -447,13 +445,11 @@
                             <div class="trainer_descr">
                                 <div>
                                     <div><h5>Anne Warren<br>Personal Trainer</h5></div>
-                                    <p class="trainer_txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In augue nisl, onare volutpat.</p>
+                                    <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In augue nisl, onare volutpat.</p>
                                 </div>
     
                                 <div class="social">
-                                    <span><i class="fab fa-facebook-f"></i></span>
-                                    <span><i class="fab fa-twitter"></i></span>
-                                    <span><i class="fab fa-instagram"></i></span>
+                                    <a v-for="icon in footerSocial" :href="icon.url"><i class="fab" :class="icon.class"></i></a>
                                 </div>
                             </div>
 
@@ -470,13 +466,11 @@
                             <div class="trainer_descr">
                                 <div>
                                     <div><h5>Peter Rice<br>Personal Trainer</h5></div>
-                                    <p class="trainer_txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In augue nisl, onare volutpat.</p>
+                                    <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In augue nisl, onare volutpat.</p>
                                 </div>
     
                                 <div class="social">
-                                    <span><i class="fab fa-facebook-f"></i></span>
-                                    <span><i class="fab fa-twitter"></i></span>
-                                    <span><i class="fab fa-instagram"></i></span>
+                                    <a v-for="icon in footerSocial" :href="icon.url"><i class="fab" :class="icon.class"></i></a>
                                 </div>
                             </div>
 
@@ -533,7 +527,7 @@
                                 <div class="news_article">
                                     <div>
                                         <h3>Train with free weights or your body weight?</h3>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pretium, tortor vitae porttitor suscipit, sapien purus aliquet risus, eu finibus arcu ante nec risus. [...]</p>
+                                        <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pretium, tortor vitae porttitor suscipit, sapien purus aliquet risus, eu finibus arcu ante nec risus. [...]</p>
                                     </div>
                                 </div>
                             </div>
@@ -546,7 +540,7 @@
                                 <div class="news_article">
                                     <div>
                                         <h3>To be number one, train like you’re number two</h3>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pretium, tortor vitae porttitor suscipit, sapien purus aliquet risus, eu finibus arcu ante nec risus. [...]</p>
+                                        <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pretium, tortor vitae porttitor suscipit, sapien purus aliquet risus, eu finibus arcu ante nec risus. [...]</p>
                                     </div>
                                 </div>
                             </div>
@@ -564,7 +558,7 @@
                                 <div class="news_article">
                                     <div>
                                         <h3>Nutritional advice that will keep you training</h3>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pretium, tortor vitae porttitor suscipit, sapien purus aliquet risus, eu finibus arcu ante nec risus. [...]</p>
+                                        <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pretium, tortor vitae porttitor suscipit, sapien purus aliquet risus, eu finibus arcu ante nec risus. [...]</p>
                                     </div>
                                 </div>
                             </div>
@@ -577,7 +571,7 @@
                                 <div class="news_article">
                                     <div>
                                         <h3>Top 5 mistakes every gym member makes</h3>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pretium, tortor vitae porttitor suscipit, sapien purus aliquet risus, eu finibus arcu ante nec risus. [...]</p>
+                                        <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pretium, tortor vitae porttitor suscipit, sapien purus aliquet risus, eu finibus arcu ante nec risus. [...]</p>
                                     </div>
                                 </div>
                             </div>
@@ -595,7 +589,7 @@
                                 <div class="news_article">
                                     <div>
                                         <h3>Simple principles for your next workout</h3>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pretium, tortor vitae porttitor suscipit, sapien purus aliquet risus, eu finibus arcu ante nec risus. [...]</p>
+                                        <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pretium, tortor vitae porttitor suscipit, sapien purus aliquet risus, eu finibus arcu ante nec risus. [...]</p>
                                     </div>
                                 </div>
                             </div>
@@ -608,7 +602,7 @@
                                 <div class="news_article">
                                     <div>
                                         <h3>The myths of shedding body fat explored</h3>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pretium, tortor vitae porttitor suscipit, sapien purus aliquet risus, eu finibus arcu ante nec risus. [...]</p>
+                                        <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pretium, tortor vitae porttitor suscipit, sapien purus aliquet risus, eu finibus arcu ante nec risus. [...]</p>
                                     </div>
                                 </div>
                             </div>
@@ -651,6 +645,58 @@
 
         <!-- INIZIO FOOTER -->
         <footer>
+
+            <div class="top_footer four_col">
+
+                <div class="container">
+
+                    <div v-for="list in footerMenu" class="col">
+                        <ul>
+                            <li>
+                                <h6>{{list.listTitle}}</h6>
+                            </li>
+                            <li
+                                v-for="li in list.listElement"
+                                class="paragraph"
+                                :class="li.class">
+                                <i class="fas fa-chevron-right paragraph" v-if="li.class == 'post'"></i>
+                                {{li.text}}
+                            </li>
+                        </ul>
+                    </div>
+    
+                    <div class="col">
+                        <img src="img/gym_ad-compressor.jpg" alt="">
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="bottom_footer">
+
+                <div class="container">
+
+                    <div class="left_footer">
+
+                        <ul>
+                            <li v-for="item in footerCopyright" class="footer_txt">{{item}}</li>
+                        </ul>
+    
+                    </div>
+    
+                    <div class="right_footer">
+
+                        <div class="social">
+                            <a v-for="icon in footerSocial" :href="icon.url"><i class="fab" :class="icon.class"></i></a>
+                        </div>
+
+                    </div>
+
+                </div>
+                
+            </div>
+
         </footer>
         <!-- INIZIO FOOTER -->
 

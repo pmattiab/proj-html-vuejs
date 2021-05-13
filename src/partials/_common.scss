@@ -40,32 +40,6 @@ section {
     margin: $divider_xx_margin;
 }
 
-input {
-    outline: none;
-}
-
-li {
-    list-style-type: none;
-}
-
-a {
-    text-decoration: none;
-}
-
-.button {
-    
-    @include button;
-
-    &:active {
-        transform: translateY(2px);
-    }
-}
-
-.white_btn {
-    color: $main_text_color;
-    border-color: $main_text_color;
-}
-
 h1 {
     font-size: $h1_size;
     text-transform: uppercase;
@@ -85,7 +59,66 @@ h4 {
 }
 
 h5 {
-    font-size: $h5_size
+    font-size: $h5_size;
+}
+
+h6 {
+    font-size: $h6_size;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.paragraph {
+    color: $secondary_text_color;
+    font-size: $paragraph_size;
+    line-height: $parag_line_height;
+}
+
+.footer_txt {
+    color: $secondary_text_color;
+    font-size: 13px;
+}
+
+input {
+    outline: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.social {
+
+    a {
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        margin-right: 10px;
+        border-radius: 5%;
+        position: relative;
+
+        i {
+            @include centered;
+        }
+    }
+}
+
+.button {
+    
+    @include button;
+
+    &:active {
+        transform: translateY(2px);
+    }
+}
+
+.white_btn {
+    color: $main_text_color;
+    border-color: $main_text_color;
 }
 
 .two_col {
