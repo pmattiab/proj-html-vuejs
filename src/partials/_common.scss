@@ -32,12 +32,23 @@ section {
     text-align: center;
 }
 
-.divider_x {
-    margin: $divider_x_margin;
+img {
+    display: block;
 }
 
-.divider_xx {
-    margin: $divider_xx_margin;
+.divider {
+
+    img {
+        display: inline-block;
+    }
+
+    .div_x {
+        margin: $divider_x_margin;
+    }
+
+    .div_xx {
+        margin: $divider_xx_margin;
+    }
 }
 
 h1 {

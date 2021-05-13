@@ -35,32 +35,48 @@
                     <img src="img/gym_logo_1x.png" alt="logo">
                 </div>
 
-                <!-- link navbar -->
+                <!-- inizio link navbar -->
                 <div class="nav_links">
+
+                    <!-- inizio nav -->
                     <nav>
+
+                        <!-- inizio lista link -->
                         <ul class="links_list">
-                            <li
-                                v-for="(link, index) in headerLinks">
-                                <a
-                                    :class="{active : index == activeHeaderLink}"
+
+                            <!-- singolo link -->
+                            <li v-for="(link, index) in headerLinks">
+                                <a  :class="{active : index == activeHeaderLink}"
                                     @click="changeActivePage(index)"
-                                    href="#">
-                                    {{link}}
-                                </a>
+                                    href="#">{{link}}</a>
                             </li>
+
                         </ul>
+                        <!-- fine lista link -->
+
                     </nav>
+                    <!-- fine nav -->
+
                 </div>
+                <!-- fine link navbar -->
 
             </div>
             <!-- fine navbar -->
 
-            <!-- titolo -->
+            <!-- inizio contenitore titolo -->
             <div class="title txt_center">
+
+                <!-- titolo -->
                 <h1>no pain no gain</h1>
+
+                <!-- sottotitolo -->
                 <div class="subtitle">Motivation is what gets you started. Habit is what keeps you going</div>
+
+                <!-- link bottone -->
                 <a class="button white_btn" href="#sign_up">join us today</a>
+
             </div>
+            <!-- fine contenitore titolo -->
 
         </header>
         <!-- FINE HEADER -->
@@ -80,8 +96,8 @@
                     </div>
     
                     <!-- divisore -->
-                    <div class="divider_xx">
-                        <img src="img/divider-xx-red.png" alt="divider">
+                    <div class="divider">
+                        <img class="div_xx" src="img/divider-xx-red.png" alt="divider">
                     </div>
     
                     <!-- descrizione -->
@@ -106,15 +122,23 @@
                         <img src="img/home_img-compressor.jpg" alt="compressor">
                     </div>
 
-                    <!-- colonna destra -->
+                    <!-- inizio colonna destra -->
                     <div class="col col_dx">
+
+                        <!-- titolo -->
                         <h3>Sign Up For a Free Training Session!</h3>
+
+                        <!-- input -->
                         <label for="name">Name ..*</label>
                         <input type="text" id="name">
                         <label for="">Email</label>
                         <input type="email" id="email">
+
+                        <!-- bottone input -->
                         <input class="button" type="submit" value="start now!">
+
                     </div>
+                    <!-- fine colonna destra -->
 
                 </div>
                 <!-- fine contenitore registrati -->
@@ -130,69 +154,105 @@
 
                     <!-- inizio colonna 1 -->
                     <div class="col">
+
+                        <!-- icona -->
                         <div class="icon txt_center">
                             <i class="fas fa-unlink"></i>
                         </div>
+
+                        <!-- titolo -->
                         <div>
                             <h4>Strength & Conditioning</h4>
                         </div>
-                        <div class="divider_x">
-                            <img src="img/divider-x-red.png" alt="">
+
+                        <!-- immagine divisoria -->
+                        <div class="divider">
+                            <img class="div_x" src="img/divider-x-red.png" alt="">
                         </div>
+
+                        <!-- paragrafo -->
                         <div class="paragraph">
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In augue nisl, ornare es volutpat etra us.</p>
                         </div>
+
                     </div>
                     <!-- fine colonna 1 -->
 
                     <!-- inizio colonna 2 -->
                     <div class="col">
+
+                        <!-- icona -->
                         <div class="icon">
                             <i class="fas fa-bicycle"></i>
                         </div>
+
+                        <!-- titolo -->
                         <div>
                             <h4>Fitness & Cardio</h4>
                         </div>
-                        <div class="divider_x">
-                            <img src="img/divider-x-red.png" alt="">
+
+                        <!-- immagine divisoria -->
+                        <div class="divider">
+                            <img class="div_x" src="img/divider-x-red.png" alt="">
                         </div>
+
+                        <!-- paragrafo -->
                         <div class="paragraph">
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In augue nisl, ornare es volutpat etra us.</p>
                         </div>
+
                     </div>
                     <!-- fine colonna 2 -->
 
                     <!-- inizio colonna 3 -->
                     <div class="col">
+
+                        <!-- icona -->
                         <div class="icon">
                             <i class="fab fa-skyatlas"></i>
                         </div>
+
+                        <!-- titolo -->
                         <div>
                             <h4>Flexibility & Rest</h4>
                         </div>
-                        <div class="divider_x">
-                            <img src="img/divider-x-red.png" alt="">
+
+                        <!-- immagine divisoria -->
+                        <div class="divider">
+                            <img class="div_x" src="img/divider-x-red.png" alt="">
                         </div>
+
+                        <!-- paragrafo -->
                         <div class="paragraph">
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In augue nisl, ornare es volutpat etra us.</p>
                         </div>
+
                     </div>
                     <!-- fine colonna 3 -->
 
                     <!-- inizio colonna 4 -->
                     <div class="col">
+
+                        <!-- icona -->
                         <div class="icon">
                             <i class="fas fa-heartbeat"></i>
                         </div>
+
+                        <!-- titolo -->
                         <div>
                             <h4>Health & Diet</h4>
                         </div>
-                        <div class="divider_x">
-                            <img src="img/divider-x-red.png" alt="">
+
+                        <!-- immagine divisoria -->
+                        <div class="divider">
+                            <img class="div_x" src="img/divider-x-red.png" alt="">
                         </div>
+
+                        <!-- paragrafo -->
                         <div class="paragraph">
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In augue nisl, ornare es volutpat etra us.</p>
                         </div>
+
                     </div>
                     <!-- fine colonna 4 -->
 
@@ -217,8 +277,8 @@
                         </div>
     
                         <!-- divisore -->
-                        <div class="divider_xx">
-                            <img src="img/divider-xx-red.png" alt="divider">
+                        <div class="divider">
+                            <img class="div_xx" src="img/divider-xx-red.png" alt="divider">
                         </div>
 
                     </div>
@@ -230,18 +290,22 @@
                         <!-- inizio colonna sinistra riga superiore -->
                         <div class="col col_sx">
 
+                            <!-- inizio singola recensione -->
                             <div class="single_review">
 
+                                <!-- immagine recensione -->
                                 <div class="review_img">
                                     <img src="img/review_1-compressor.jpg" alt="">
                                 </div>
 
+                                <!-- paragrafo recensione -->
                                 <div class="review_txt paragraph">
                                     <p><em>“The trainers at Avada Gym have helped me reach my fitness goals beyond anything I could of hoped for. I love it!”</em></p>
                                     <span><b>– Tara Smith</b></span>
                                 </div>
 
                             </div>
+                            <!-- fine singola recensione -->
 
                         </div>
                         <!-- fine colonna sinistra riga superiore -->
@@ -249,18 +313,22 @@
                         <!-- inizio colonna destra riga superiore -->
                         <div class="col col_dx">
 
+                            <!-- inizio singola recensione -->
                             <div class="single_review">
 
+                                <!-- immagine recensione -->
                                 <div class="review_img">
                                     <img src="img/review_3-compressor-2.jpg" alt="">
                                 </div>
 
+                                <!-- paragrafo recensione -->
                                 <div class="review_txt paragraph">
                                     <p><em>“The atmosphere at Avada Gym is amazing, the people are even better. All in all, it is a great place to work out.”</em></p>
                                     <span><b>– Simon Chel</b></span>
                                 </div>
 
                             </div>
+                            <!-- fine singola recensione -->
 
                         </div>
                         <!-- fine colonna destra riga superiore -->
@@ -274,18 +342,22 @@
                         <!-- inizio colonna sinistra riga inferiore -->
                         <div class="col col_sx">
 
+                            <!-- inizio singola recensione -->
                             <div class="single_review">
 
+                                <!-- immagine recensione -->
                                 <div class="review_img">
                                     <img src="img/review_2-compressor.jpg" alt="">
                                 </div>
 
+                                <!-- paragrafo recensione -->
                                 <div class="review_txt paragraph">
                                     <p><em>“The facilities at Avada Gym stood out to me the most. They are well maintained and have high quality equipment.”</em></p>
                                     <span><b>– Jen Wirth</b></span>
                                 </div>
 
                             </div>
+                            <!-- fine singola recensione -->
 
                         </div>
                         <!-- fine colonna sinistra riga inferiore -->
@@ -293,18 +365,22 @@
                         <!-- inizio colonna destra riga inferiore -->
                         <div class="col col_dx">
 
+                            <!-- inizio singola recensione -->
                             <div class="single_review">
 
+                                <!-- immagine recensione -->
                                 <div class="review_img">
                                     <img src="img/review_4-compressor-2.jpg" alt="">
                                 </div>
 
+                                <!-- paragrafo recensione -->
                                 <div class="review_txt paragraph">
                                     <p><em>“No bad things to say about Avada Gym, they are top notch at every corner and truly take care of their customers.”</em></p>
                                     <span><b>– Jeff Glum</b></span>
                                 </div>
 
                             </div>
+                            <!-- fine singola recensione -->
 
                         </div>
                         <!-- fine colonna destra riga inferiore -->
@@ -333,44 +409,66 @@
                         </div>
     
                         <!-- divisore -->
-                        <div class="divider_xx">
-                            <img src="img/divider-xx-red.png" alt="divider">
+                        <div class="divider">
+                            <img class="div_xx" src="img/divider-xx-red.png" alt="divider">
                         </div>
 
                     </div>
                     <!-- fine riga titolo -->
 
+                    <!-- inizio riga superiore -->
                     <div class="top_row three_col">
 
+                        <!-- colonna sinistra -->
                         <div class="col col_sx">
-                            <img src="img/home-image1.jpg" alt="">
+                            <div class="performance_img">
+                                <img src="img/home-image1.jpg" alt="">
+                            </div>
                         </div>
 
+                        <!-- colonna centrale -->
                         <div class="col col_cx">
-                            <img src="img/home-image2.jpg" alt="">
+                            <div class="performance_img">
+                                <img src="img/home-image2.jpg" alt="">
+                            </div>
                         </div>
 
+                        <!-- colonna destra -->
                         <div class="col col_dx">
-                            <img src="img/home-image3.jpg" alt="">
+                            <div class="performance_img">
+                                <img src="img/home-image3.jpg" alt="">
+                            </div>
                         </div>
 
                     </div>
+                    <!-- fine riga superiore -->
 
+                    <!-- inizio riga inferiore -->
                     <div class="bottom_row three_col">
 
+                        <!-- colonna sinistra -->
                         <div class="col col_sx">
-                            <img src="img/home-image4.jpg" alt="">
+                            <div class="performance_img">
+                                <img src="img/home-image4.jpg" alt="">
+                            </div>
                         </div>
 
+                        <!-- colonna centrale -->
                         <div class="col col_cx">
-                            <img src="img/home-image54.jpg" alt="">
+                            <div class="performance_img">
+                                <img src="img/home-image54.jpg" alt="">
+                            </div>
                         </div>
 
+                        <!-- colonna destra -->
                         <div class="col col_dx">
-                            <img src="img/home-image6.jpg" alt="">
+                            <div class="performance_img">
+                                <img src="img/home-image6.jpg" alt="">
+                            </div>
                         </div>
 
                     </div>
+                    <!-- fine riga inferiore -->
 
                 </div>
                 <!-- fine contenitore prestazioni -->
@@ -380,13 +478,30 @@
 
             <!-- inizio sezione motivazione -->
             <section id="motivation">
+
+                <!-- inizio contenitore stretto -->
                 <div class="small_container txt_center">
+
+                    <!-- testo -->
                     <div class="motivation_text">
+
+                        <!-- citazione -->
                         <p class="cit">“ I fear not the man who has practiced 10,000 kicks once, but I fear the man who has practiced one kick 10,000 times ”</p>
-                        <div><img src="img/divider-white-xx.png" alt="divider"></div>
-                        <span><b>BRUCE LEE • QUOTE OF THE DAY</b></span>
+
+                        <!-- divisore -->
+                        <div class="divider_xx_white">
+                            <img src="img/divider-white-xx.png" alt="divider">
+                        </div>
+
+                        <!-- autore -->
+                        <span>
+                            <b>BRUCE LEE • QUOTE OF THE DAY</b>
+                        </span>
+
                     </div>
                 </div>
+                <!-- fine contenitore stretto -->
+
             </section>
             <!-- fine sezione motivazione -->
 
@@ -405,8 +520,8 @@
                         </div>
     
                         <!-- divisore -->
-                        <div class="divider_xx">
-                            <img src="img/divider-xx-red.png" alt="divider">
+                        <div class="divider">
+                            <img class="div_xx" src="img/divider-xx-red.png" alt="divider">
                         </div>
 
                     </div>
@@ -415,64 +530,98 @@
                     <!-- inizio riga contenuto -->
                     <div class="row three_col">
 
-                        <!-- colonnna sinistra -->
+                        <!-- inizio colonnna sinistra -->
                         <div class="col col_sx">
                             
-                            <div class="trainer_img">
-                                <img src="img/trainer1.jpg" alt="">
-                            </div>
+                            <!-- inizio card allenatore -->
+                            <div class="trainer_card">
 
-                            <div class="trainer_descr">
-                                <div>
-                                    <h5>Ann Baker<br>Personal Trainer</h5>
-                                    <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In augue nisl, onare volutpat.</p>
+                                <!-- immagine allenatore -->
+                                <div class="trainer_img">
+                                    <img src="img/trainer1.jpg" alt="">
                                 </div>
     
-                                <div class="social">
-                                    <a v-for="icon in footerSocial" :href="icon.url"><i class="fab" :class="icon.class"></i></a>
+                                <!-- inizio descrizione allenatore -->
+                                <div class="trainer_descr">
+
+                                    <!-- nome e biografia allenatore -->
+                                    <h5>Ann Baker<br>Personal Trainer</h5>
+                                    <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In augue nisl, onare volutpat.</p>
+        
+                                    <!-- bottoni social -->
+                                    <div class="social">
+                                        <a v-for="icon in footerSocial" :href="icon.url"><i class="fab" :class="icon.class"></i></a>
+                                    </div>
+
                                 </div>
+                                <!-- inizio descrizione allenatore -->
+
                             </div>
+                            <!-- fine card allenatore -->
                             
                         </div>
+                        <!-- fine colonnna sinistra -->
 
                         <!-- inizio colonnna centrale -->
                         <div class="col col_cx">
 
-                            <div class="trainer_img">
-                                <img src="img/trainer3.jpg" alt="">
-                            </div>
+                            <!-- inizio card allenatore -->
+                            <div class="trainer_card">
 
-                            <div class="trainer_descr">
-                                <div>
-                                    <div><h5>Anne Warren<br>Personal Trainer</h5></div>
-                                    <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In augue nisl, onare volutpat.</p>
+                                <!-- immagine allenatore -->
+                                <div class="trainer_img">
+                                    <img src="img/trainer3.jpg" alt="">
                                 </div>
     
-                                <div class="social">
-                                    <a v-for="icon in footerSocial" :href="icon.url"><i class="fab" :class="icon.class"></i></a>
+                                <!-- descrizione allenatore -->
+                                <div class="trainer_descr">
+
+                                    <!-- nome e biografia allenatore -->
+                                    <div><h5>Anne Warren<br>Personal Trainer</h5></div>
+                                    <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In augue nisl, onare volutpat.</p>
+        
+                                    <!-- bottoni social -->
+                                    <div class="social">
+                                        <a v-for="icon in footerSocial" :href="icon.url"><i class="fab" :class="icon.class"></i></a>
+                                    </div>
+
                                 </div>
+                                <!-- inizio descrizione allenatore -->
+
                             </div>
+                            <!-- fine card allenatore -->
 
                         </div>
                         <!-- fine colonnna centrale -->
 
-                        <!-- fine colonnna destra -->
+                        <!-- inizio colonnna destra -->
                         <div class="col col_dx">
 
-                            <div class="trainer_img">
-                                <img src="img/trainer4.jpg" alt="">
-                            </div>
+                            <!-- inizio card allenatore -->
+                            <div class="trainer_card">
 
-                            <div class="trainer_descr">
-                                <div>
-                                    <div><h5>Peter Rice<br>Personal Trainer</h5></div>
-                                    <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In augue nisl, onare volutpat.</p>
+                                <!-- immagine allenatore -->
+                                <div class="trainer_img">
+                                    <img src="img/trainer4.jpg" alt="">
                                 </div>
     
-                                <div class="social">
-                                    <a v-for="icon in footerSocial" :href="icon.url"><i class="fab" :class="icon.class"></i></a>
+                                <!-- descrizione allenatore -->
+                                <div class="trainer_descr">
+
+                                    <!-- nome e biografia allenatore -->
+                                    <div><h5>Peter Rice<br>Personal Trainer</h5></div>
+                                    <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In augue nisl, onare volutpat.</p>
+        
+                                    <!-- bottoni social -->
+                                    <div class="social">
+                                        <a v-for="icon in footerSocial" :href="icon.url"><i class="fab" :class="icon.class"></i></a>
+                                    </div>
+
+                                <!-- inizio descrizione allenatore -->
                                 </div>
+
                             </div>
+                            <!-- fine card allenatore -->
 
                         </div>
                         <!-- fine colonnna destra -->
@@ -482,6 +631,7 @@
 
                     <!-- riga inferiore -->
                     <div class="txt_center">
+                        <!-- bottone -->
                         <a class="button white_btn" href="">view all trainers</a>
                     </div>
 
@@ -506,8 +656,8 @@
                         </div>
     
                         <!-- divisore -->
-                        <div class="divider_xx">
-                            <img src="img/divider-xx-red.png" alt="divider">
+                        <div class="divider">
+                            <img class="div_xx" src="img/divider-xx-red.png" alt="divider">
                         </div>
 
                     </div>
@@ -516,96 +666,158 @@
                     <!-- inizio riga contenuto -->
                     <div class="row three_col">
 
-                        <!-- colonnna sinistra -->
+                        <!-- inizio colonnna sinistra -->
                         <div class="col col_sx">
 
+                            <!-- inizio singola notizia -->
                             <div class="single_new">
+
+                                <!-- immagine notizia -->
                                 <div class="news_img">
-                                    <img src="img/blog1.jpg" alt="">
-                                </div>
-    
-                                <div class="news_article">
-                                    <div>
-                                        <h3>Train with free weights or your body weight?</h3>
-                                        <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pretium, tortor vitae porttitor suscipit, sapien purus aliquet risus, eu finibus arcu ante nec risus. [...]</p>
+                                    <img src="img/blog1.jpg" alt="blog">
+
+                                    <!-- layover (nascosto di default) -->
+                                    <div class="layover">
+                                        <i class="fas fa-link"></i>
+                                        <i class="fas fa-search"></i>
                                     </div>
                                 </div>
-                            </div>
+    
+                                <!-- articolo notizia -->
+                                <div class="news_article">
+                                    <h3>Train with free weights or your body weight?</h3>
+                                    <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pretium, tortor vitae porttitor suscipit, sapien purus aliquet risus, eu finibus arcu ante nec risus. [...]</p>
+                                </div>
 
+                            </div>
+                            <!-- fine singola notizia -->
+
+                            <!-- inizio singola notizia -->
                             <div class="single_new">
+
+                                <!-- immagine notizia -->
                                 <div class="news_img">
                                     <img src="img/blog4.jpg" alt="">
-                                </div>
-    
-                                <div class="news_article">
-                                    <div>
-                                        <h3>To be number one, train like you’re number two</h3>
-                                        <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pretium, tortor vitae porttitor suscipit, sapien purus aliquet risus, eu finibus arcu ante nec risus. [...]</p>
+
+                                    <!-- layover (nascosto di default) -->
+                                    <div class="layover">
+                                        <i class="fas fa-link"></i>
+                                        <i class="fas fa-search"></i>
                                     </div>
                                 </div>
+    
+                                <!-- articolo notizia -->
+                                <div class="news_article">
+                                    <h3>To be number one, train like you’re number two</h3>
+                                    <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pretium, tortor vitae porttitor suscipit, sapien purus aliquet risus, eu finibus arcu ante nec risus. [...]</p>
+                                </div>
+
                             </div>
+                            <!-- fine singola notizia -->
                             
                         </div>
+                        <!-- fine colonnna sinistra -->
 
                         <!-- inizio colonnna centrale -->
                         <div class="col col_cx">
 
+                            <!-- inizio singola notizia -->
                             <div class="single_new">
+
+                                <!-- immagine notizia -->
                                 <div class="news_img">
                                     <img src="img/blog6.jpg" alt="">
-                                </div>
-    
-                                <div class="news_article">
-                                    <div>
-                                        <h3>Nutritional advice that will keep you training</h3>
-                                        <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pretium, tortor vitae porttitor suscipit, sapien purus aliquet risus, eu finibus arcu ante nec risus. [...]</p>
+
+                                    <!-- layover (nascosto di default) -->
+                                    <div class="layover">
+                                        <i class="fas fa-link"></i>
+                                        <i class="fas fa-search"></i>
                                     </div>
                                 </div>
-                            </div>
+    
+                                <!-- articolo notizia -->
+                                <div class="news_article">
+                                    <h3>Nutritional advice that will keep you training</h3>
+                                    <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pretium, tortor vitae porttitor suscipit, sapien purus aliquet risus, eu finibus arcu ante nec risus. [...]</p>
+                                </div>
 
+                            </div>
+                            <!-- fine singola notizia -->
+
+                            <!-- inizio singola notizia -->
                             <div class="single_new">
+
+                                <!-- immagine notizia -->
                                 <div class="news_img">
                                     <img src="img/trainer3.jpg" alt="">
-                                </div>
-    
-                                <div class="news_article">
-                                    <div>
-                                        <h3>Top 5 mistakes every gym member makes</h3>
-                                        <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pretium, tortor vitae porttitor suscipit, sapien purus aliquet risus, eu finibus arcu ante nec risus. [...]</p>
+
+                                    <!-- layover (nascosto di default) -->
+                                    <div class="layover">
+                                        <i class="fas fa-link"></i>
+                                        <i class="fas fa-search"></i>
                                     </div>
                                 </div>
+    
+                                <!-- articolo notizia -->
+                                <div class="news_article">
+                                    <h3>Top 5 mistakes every gym member makes</h3>
+                                    <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pretium, tortor vitae porttitor suscipit, sapien purus aliquet risus, eu finibus arcu ante nec risus. [...]</p>
+                                </div>
+
                             </div>
+                            <!-- fine singola notizia -->
+
                         </div>
                         <!-- fine colonnna centrale -->
 
-                        <!-- fine colonnna destra -->
+                        <!-- inizio colonnna destra -->
                         <div class="col col_dx">
 
+                            <!-- inizio singola notizia -->
                             <div class="single_new">
+
+                                <!-- immagine notizia -->
                                 <div class="news_img">
                                     <img src="img/trainer4.jpg" alt="">
-                                </div>
-    
-                                <div class="news_article">
-                                    <div>
-                                        <h3>Simple principles for your next workout</h3>
-                                        <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pretium, tortor vitae porttitor suscipit, sapien purus aliquet risus, eu finibus arcu ante nec risus. [...]</p>
+
+                                    <!-- layover (nascosto di default) -->
+                                    <div class="layover">
+                                        <i class="fas fa-link"></i>
+                                        <i class="fas fa-search"></i>
                                     </div>
                                 </div>
-                            </div>
+    
+                                <!-- articolo notizia -->
+                                <div class="news_article">
+                                    <h3>Simple principles for your next workout</h3>
+                                    <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pretium, tortor vitae porttitor suscipit, sapien purus aliquet risus, eu finibus arcu ante nec risus. [...]</p>
+                                </div>
 
+                            </div>
+                            <!-- fine singola notizia -->
+
+                            <!-- inizio singola notizia -->
                             <div class="single_new">
+
+                                <!-- immagine notizia -->
                                 <div class="news_img">
                                     <img src="img/trainer1.jpg" alt="">
-                                </div>
-    
-                                <div class="news_article">
-                                    <div>
-                                        <h3>The myths of shedding body fat explored</h3>
-                                        <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pretium, tortor vitae porttitor suscipit, sapien purus aliquet risus, eu finibus arcu ante nec risus. [...]</p>
+
+                                    <!-- layover (nascosto di default) -->
+                                    <div class="layover">
+                                        <i class="fas fa-link"></i>
+                                        <i class="fas fa-search"></i>
                                     </div>
                                 </div>
+    
+                                <!-- articolo notizia -->
+                                <div class="news_article">
+                                    <h3>The myths of shedding body fat explored</h3>
+                                    <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pretium, tortor vitae porttitor suscipit, sapien purus aliquet risus, eu finibus arcu ante nec risus. [...]</p>
+                                </div>
+
                             </div>
+                            <!-- fine singola notizia -->
 
                         </div>
                         <!-- fine colonnna destra -->
@@ -615,6 +827,8 @@
 
                     <!-- riga inferiore -->
                     <div class="txt_center">
+
+                        <!-- bottone -->
                         <a class="button white_btn" href="">read all articles</a>
                     </div>
 
@@ -627,15 +841,22 @@
             <!-- INIZIO SEZIONE OBIETTIVI -->
             <section id="goals">
 
+                <!-- inizio contenitore -->
                 <div class="container">
+
+                    <!-- titolo -->
                     <div class="title">
                         <h2>Achieve Your Fitness Goals</h2>
                         <span>Flexible membership packages to suit all levels of athlete and achive your fitness goals</span>
                     </div>
+
+                    <!-- bottone -->
                     <div>
                         <a class="button white_btn" href="#sign_up">join us</a>
                     </div>
+
                 </div>
+                <!-- fine contenitore -->
 
             </section>
             <!-- INIZIO SEZIONE OBIETTIVI -->
@@ -646,15 +867,24 @@
         <!-- INIZIO FOOTER -->
         <footer>
 
+            <!-- inizio footer superiore -->
             <div class="top_footer four_col">
 
+                <!-- inizio contenitore footer superiore -->
                 <div class="container">
 
+                    <!-- inizio singola colonna -->
                     <div v-for="list in footerMenu" class="col">
+
+                        <!-- inizio singola lista di link -->
                         <ul>
+
+                            <!-- singolo elemento titolo lista -->
                             <li>
                                 <h6>{{list.listTitle}}</h6>
                             </li>
+
+                            <!-- singolo elemento link lista -->
                             <li
                                 v-for="li in list.listElement"
                                 class="paragraph"
@@ -662,40 +892,52 @@
                                 <i class="fas fa-chevron-right paragraph" v-if="li.class == 'post'"></i>
                                 {{li.text}}
                             </li>
+                            
                         </ul>
+                        <!-- fine singola lista di link -->
+
                     </div>
+                    <!-- fine singola colonna -->
     
                     <div class="col">
                         <img src="img/gym_ad-compressor.jpg" alt="">
                     </div>
 
                 </div>
+                <!-- fine contenitore footer superiore -->
 
             </div>
+            <!-- fine footer superiore -->
 
+            <!-- inizio footer inferiore -->
             <div class="bottom_footer">
 
+                <!-- inizio contenitore footer inferiore -->
                 <div class="container">
 
+                    <!-- parte sinistra -->
                     <div class="left_footer">
 
+                        <!-- copyright -->
                         <ul>
                             <li v-for="item in footerCopyright" class="footer_txt">{{item}}</li>
                         </ul>
-    
                     </div>
     
+                    <!-- parte destra -->
                     <div class="right_footer">
 
+                        <!-- bottoni social -->
                         <div class="social">
                             <a v-for="icon in footerSocial" :href="icon.url"><i class="fab" :class="icon.class"></i></a>
                         </div>
-
                     </div>
 
                 </div>
+                <!-- fine contenitore footer inferiore -->
                 
             </div>
+            <!-- fine footer inferiore -->
 
         </footer>
         <!-- INIZIO FOOTER -->

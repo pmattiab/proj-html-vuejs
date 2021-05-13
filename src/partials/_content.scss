@@ -1,4 +1,6 @@
 // MAIN
+
+// sezione qualità
 #quality {
 
     background-color: $brand_primary_color;
@@ -10,6 +12,7 @@
     }
 }
 
+// sezione registrati
 #sign_up {
 
     background-color: $brand_third_color;
@@ -48,6 +51,7 @@
     }
 }
 
+// sezione servizi
 #services {
 
     background-image: $services_image;
@@ -80,6 +84,7 @@
 
 }
 
+// sezione recensioni
 #reviews {
 
     background-color: $brand_primary_color;
@@ -97,10 +102,17 @@
 
 }
 
+// sezione qualità
 #performance {
     background-color: $brand_primary_color;
+
+    .performance_img:hover {
+        transform: scale(1.1);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    }
 }
 
+// sezione motivazione
 #motivation {
 
     background-image: $motivation_image;
@@ -119,6 +131,7 @@
     }
 }
 
+// sezione allenatori
 #trainers {
 
     background-color: $brand_third_color;
@@ -131,27 +144,38 @@
         background-color: $brand_primary_color;
     }
 
-    .trainer_descr {
+    .trainer_card {
 
-        padding: 30px;
-        line-height: 25px;
+        .trainer_descr {
 
-        .paragraph {
-            margin: 25px 0;
-        }
-    }
-
-    .social {
-
-        a {
-            color: $main_text_color;
-            background-color: $brand_third_color;
-
-            &:visited {
-                color: $main_text_color;
+            padding: 30px;
+            line-height: 25px;
+    
+            .paragraph {
+                margin: 25px 0;
             }
         }
+    
+        .social {
+    
+            a {
+                color: $main_text_color;
+                background-color: $brand_third_color;
+    
+                &:visited {
+                    color: $main_text_color;
+                }
+            }
+        }
+
+        &:hover .trainer_img {
+            transform: scale(1.05);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+        }
+
     }
+
+
 
     .button {
 
@@ -162,6 +186,7 @@
     }
 }
 
+// sezione news articoli
 #news {
 
     background-color: $brand_primary_color;
@@ -179,6 +204,32 @@
                 margin-bottom: 10px;
             }
         }
+
+        .news_img {
+
+            position: relative;
+            width: 100%;
+    
+            .layover {
+                width: calc(100% + 2px);
+                height: calc(100% + 2px);
+                background-color: rgba($brand_details_color, 0.9);
+                cursor: pointer;
+                @include centered;
+                display: none;
+
+                i {
+                    font-size: $h3_size;
+                    margin: 0 10px;
+                }
+            }
+        }
+
+        &:hover .layover {
+            @include display-flex;
+            justify-content: center;
+            align-items: center;
+        }
     }
 
     .button {
@@ -188,9 +239,9 @@
             border-color: $brand_details_color;
         }
     }
-
 }
 
+// sezione obiettivi/motivazione
 #goals {
     background-image: $goals_image;
     background-size: cover;

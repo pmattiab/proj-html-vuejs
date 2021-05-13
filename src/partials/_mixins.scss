@@ -1,16 +1,20 @@
 // MIXINS
+
+// display flex
 @mixin display-flex {
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
 }
 
+// clearfix
 @mixin clearfix {
     content: "";
     display: table;
     clear: both;
 }
 
+// elemento centrato
 @mixin centered {
     position: absolute;
     top: 50%;
@@ -18,6 +22,17 @@
     transform: translate(-50%, -50%);
 }
 
+// bottone
+@mixin button {
+    text-transform: uppercase;
+    font-size: $description_size;
+    padding: 15px 35px;
+    display: inline-block;
+    border: 1px solid;
+    cursor: pointer;
+}
+
+// impostazione a due colonne
 @mixin two_columns {
 
     .col {
@@ -34,6 +49,7 @@
     }
 }
 
+// impostazione a tre colonne
 @mixin three_columns {
 
     .col {
@@ -58,6 +74,7 @@
     }
 }
 
+// impostazione a quattro colonne
 @mixin four_columns {
 
     .col {
@@ -65,13 +82,4 @@
         float: left;
         margin: 0 12.5px;
     }
-}
-
-@mixin button {
-    text-transform: uppercase;
-    font-size: $description_size;
-    padding: 15px 35px;
-    display: inline-block;
-    border: 1px solid;
-    cursor: pointer;
 }
